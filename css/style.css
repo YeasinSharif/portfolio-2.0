@@ -414,8 +414,10 @@ section{
     transform: scale(0);
 }
 
-.portfolio .box-container .box:hover .content{
+.portfolio .box-container .box:hover .content {
     transform: scale(1);
+    text-align: center;
+    background-color: #e6e6e6de;
 }
 
 .portfolio .box-container .box .content h3{
@@ -426,15 +428,24 @@ section{
     opacity: 0;
     transition-delay: .3s;
 }
+.portfolio .box-container .box .content h3 a {
+    color:var(--black);
+    transition: all linear .3s;
+    
+    
+}
+
 
 .portfolio .box-container .box:hover .content h3{
     transform: translateY(0rem);
     opacity: 1;
 }
-
+.portfolio .box-container .box .content h3 a:hover {
+    color: var(--green);
+}
 .contact form{
     margin:1rem auto;
-    max-width: 70rem;
+    max-width: 100%;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     padding:2rem;
